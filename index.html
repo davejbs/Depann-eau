@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dépann'eau, Entrepreneur en plomberie à Montréal</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700;1,800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TICKER -->
+<div class="ticker-wrap" role="marquee" aria-label="Informations urgences">
+  <div class="ticker-inner">
+    <!-- doubled for seamless loop -->
+    <span class="ticker-item"><span class="ticker-dot"></span>Urgences 24h/24, 7j/7</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Intervention en moins d'1 heure</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Certifié RBQ, Assuré & licencié</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Montréal</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Devis 100% gratuit</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>4,9★ sur Google, +340 avis</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Urgences 24h/24, 7j/7</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Intervention en moins d'1 heure</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Certifié RBQ, Assuré & licencié</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Montréal</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>Devis 100% gratuit</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>4,9★ sur Google, +340 avis</span>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">
+    <svg class="logo-icon" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- Background circle -->
+      <circle cx="19" cy="19" r="19" fill="#1565C0"/>
+      <!-- Faucet body horizontal pipe -->
+      <rect x="7" y="16" width="18" height="8" rx="4" fill="white"/>
+      <!-- Faucet vertical neck -->
+      <rect x="10" y="9" width="7" height="10" rx="3" fill="white"/>
+      <!-- Handle (rotated bar on top) -->
+      <rect x="7" y="7" width="13" height="4" rx="2" fill="#64B5F6"/>
+      <!-- Spout tip -->
+      <rect x="23" y="18" width="6" height="4" rx="2" fill="white"/>
+      <!-- Water drop -->
+      <path d="M29 26 C29 26 27 29 27 30.5 a2 2 0 0 0 4 0 C31 29 29 26 29 26z" fill="#64B5F6"/>
+    </svg>
+    Dépann'eau
+    <span class="logo-badge">RBQ</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#forfaits">Forfaits</a></li>
+    <li><a href="#avis">Avis</a></li>
+  </ul>
+  <button class="nav-call" onclick="window.location.href='tel:5140000000'">
+    <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.86 19.86 0 013.1 5.18 2 2 0 015.09 3h3a2 2 0 012 1.72c.13 1 .38 1.97.72 2.91a2 2 0 01-.45 2.11L9.09 11a16 16 0 006.91 6.91l1.27-1.27a2 2 0 012.11-.45c.94.34 1.91.59 2.91.72A2 2 0 0122 16.92z"/></svg>
+    514 000-0000
+  </button>
+</nav>
+
+<!-- HERO -->
+<div class="hero" id="contact">
+  <div class="hero-dots"></div>
+
+  <div class="hero-left anim-right">
+    <div class="hero-eyebrow">
+      <div class="pulse-dot"></div>
+      Disponible maintenant
+    </div>
+    <h1>
+      Votre plombier<br>
+      <em>de confiance</em><br>
+      <span class="red-line">à Montréal</span>
+    </h1>
+    <p class="hero-sub">Depuis 20 ans, Dépann'eau répond à tous vos besoins, des urgences aux rénovations. Rapidement, proprement, honnêtement.</p>
+    <div class="hero-actions">
+      <button class="btn-red" onclick="window.location.href='tel:5140000000'">
+        <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.86 19.86 0 013.1 5.18 2 2 0 015.09 3h3a2 2 0 012 1.72c.13 1 .38 1.97.72 2.91a2 2 0 01-.45 2.11L9.09 11a16 16 0 006.91 6.91l1.27-1.27a2 2 0 012.11-.45c.94.34 1.91.59 2.91.72A2 2 0 0122 16.92z"/></svg>
+        Appeler maintenant
+      </button>
+      <button class="btn-ghost" onclick="document.getElementById('forfaits').scrollIntoView({behavior:'smooth'})">Voir les forfaits</button>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num">4,9★</div><div class="stat-label">Google</div></div>
+      <div><div class="stat-num" id="stat-avis" data-target="340" data-prefix="+">+340</div><div class="stat-label">Avis</div></div>
+      <div><div class="stat-num" id="stat-ans" data-target="20">20 ans</div><div class="stat-label">D'expérience</div></div>
+      <div><div class="stat-num">&lt;1h</div><div class="stat-label">Intervention</div></div>
+    </div>
+  </div>
+
+  <!-- FORM -->
+  <div class="hero-card" id="devis">
+    <div class="hero-card-flag">Devis Gratuit</div>
+    <p class="card-title">Être rappelé rapidement</p>
+    <p class="card-sub">Réponse garantie en moins d'1 heure</p>
+    <div class="form-row">
+      <div><label>Prénom</label><input type="text" placeholder="Marie"></div>
+      <div><label>Nom</label><input type="text" placeholder="Tremblay"></div>
+    </div>
+    <div><label>Téléphone</label><input type="tel" placeholder="514 000-0000"></div>
+    <div><label>Courriel</label><input type="email" placeholder="marie@exemple.com"></div>
+    <div>
+      <label>Type de problème</label>
+      <select>
+        <option value="">Choisir…</option>
+        <option>Fuite d'eau</option>
+        <option>Dégât des eaux / inondation</option>
+        <option>Débouchage de conduit</option>
+        <option>Chauffe-eau en panne</option>
+        <option>Rénovation salle de bain</option>
+        <option>Entretien préventif</option>
+        <option>Autre</option>
+      </select>
+    </div>
+    <div><label>Message (optionnel)</label><textarea rows="2" placeholder="Décrivez le problème…" style="resize:none;margin-bottom:0"></textarea></div>
+    <br>
+    <button class="btn-submit" id="btnSubmit" onclick="submitForm()">Envoyer ma demande →</button>
+    <div class="trust-note">
+      <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+      Sans engagement · RGPD · Aucun spam
+    </div>
+
+    <!-- Confirmation overlay -->
+    <div class="form-confirm" id="formConfirm">
+      <div class="confirm-faucet">
+        <svg class="faucet-svg" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Faucet body -->
+          <rect x="20" y="28" width="40" height="14" rx="7" fill="#1565C0"/>
+          <rect x="34" y="16" width="12" height="16" rx="4" fill="#1E88E5"/>
+          <!-- Handle -->
+          <rect class="faucet-handle" x="50" y="22" width="18" height="7" rx="3.5" fill="#0D47A1" transform-origin="50 25.5"/>
+          <!-- Spout -->
+          <rect x="20" y="38" width="10" height="18" rx="4" fill="#1565C0"/>
+          <!-- Drop (animates out) -->
+          <ellipse class="faucet-drop" cx="25" cy="64" rx="4" ry="5.5" fill="#64B5F6" opacity="1"/>
+        </svg>
+      </div>
+      <p class="confirm-title">Message envoyé !</p>
+      <p class="confirm-body">On vous rappelle dans moins d'une heure. Merci de faire confiance à Dépann'eau.</p>
+    </div>
+  </div>
+</div>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="trust-item anim-fadeup d1">
+    <div class="trust-icon"><svg width="20" height="20" fill="none" stroke="#1565C0" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+    <div class="trust-text"><strong>Certifié RBQ</strong><span>Licence #1234-5678-01</span></div>
+  </div>
+  <div class="trust-item anim-fadeup d2">
+    <div class="trust-icon"><svg width="20" height="20" fill="none" stroke="#1565C0" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+    <div class="trust-text"><strong>Disponible 24h/24</strong><span>7 jours sur 7</span></div>
+  </div>
+  <div class="trust-item anim-fadeup d3">
+    <div class="trust-icon"><svg width="20" height="20" fill="none" stroke="#1565C0" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+    <div class="trust-text"><strong>Assurances incluses</strong><span>Responsabilité civile complète</span></div>
+  </div>
+  <div class="trust-item anim-fadeup d4">
+    <div class="trust-icon"><svg width="20" height="20" fill="none" stroke="#1565C0" stroke-width="2" viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/></svg></div>
+    <div class="trust-text"><strong>Devis 100% gratuit</strong><span>Sans engagement</span></div>
+  </div>
+  <div class="trust-item anim-fadeup d5">
+    <div class="trust-icon"><svg width="20" height="20" fill="none" stroke="#1565C0" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+    <div class="trust-text"><strong>+1 200 clients</strong><span>Satisfaits depuis 20 ans</span></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="services-head">
+    <div class="eyebrow">Nos services</div>
+    <h2 class="section-h2">La plomberie, c'est<br><span>plus que des tuyaux</span></h2>
+    <p class="section-lead">Du dépannage d'urgence aux grands travaux de rénovation, nos techniciens certifiés couvrent tous vos besoins.</p>
+  </div>
+
+  <div class="svc-selector">
+    <button class="svc-btn active" onclick="showSvc(this,0)">
+      <div class="sb-icon"><svg width="22" height="22" fill="none" stroke="#1565C0" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg></div>
+      <span class="sb-label">Fuites</span>
+    </button>
+    <button class="svc-btn" onclick="showSvc(this,1)">
+      <div class="sb-icon"><svg width="22" height="22" fill="none" stroke="#1565C0" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg></div>
+      <span class="sb-label">Inondation</span>
+    </button>
+    <button class="svc-btn" onclick="showSvc(this,2)">
+      <div class="sb-icon"><svg width="22" height="22" fill="none" stroke="#1565C0" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div>
+      <span class="sb-label">Débouchage</span>
+    </button>
+    <button class="svc-btn" onclick="showSvc(this,3)">
+      <div class="sb-icon"><svg width="22" height="22" fill="none" stroke="#1565C0" stroke-width="1.8" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg></div>
+      <span class="sb-label">Chauffe-eau</span>
+    </button>
+    <button class="svc-btn" onclick="showSvc(this,4)">
+      <div class="sb-icon"><svg width="22" height="22" fill="none" stroke="#1565C0" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/></svg></div>
+      <span class="sb-label">Rénovation</span>
+    </button>
+    <button class="svc-btn" onclick="showSvc(this,5)">
+      <div class="sb-icon"><svg width="22" height="22" fill="none" stroke="#1565C0" stroke-width="1.8" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+      <span class="sb-label">Entretien</span>
+    </button>
+  </div>
+
+  <div class="svc-panel" id="svcPanel">
+    <div class="sp-left">
+      <div class="sp-head">
+        <div class="sp-icon" id="spIcon">
+          <svg width="26" height="26" fill="none" stroke="#1565C0" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
+        </div>
+        <div class="sp-title" id="spTitle">Réparation de fuites</div>
+      </div>
+      <p class="sp-body" id="spBody">Détection et réparation de toute fuite, visible ou dissimulée dans les murs et planchers.</p>
+      <span class="sp-badge" id="spBadge">⚡ Urgence dispo</span>
+    </div>
+    <div class="sp-right">
+      <ul class="sp-list" id="spList">
+        <li>Fuite sous l'évier ou lavabo</li>
+        <li>Tuyauterie percée ou corrodée</li>
+        <li>Robinet qui goutte en permanence</li>
+        <li>Fuite dans les murs (détection caméra)</li>
+      </ul>
+      <div class="sp-num" id="spNum">01</div>
+    </div>
+  </div>
+</section>
+<!-- MASCOT BANNER -->
+<div class="mascot-banner">
+  <div class="mascot-banner-dots"></div>
+  <div class="banner-text anim-right">
+    <div class="eyebrow" style="color:rgba(255,255,255,.6)">Notre engagement</div>
+    <h2>La plomberie,<br>c'est plus que<br><em>des tuyaux.</em></h2>
+    <p>C'est une composante essentielle de votre maison. Dépann'eau, entrepreneurs depuis 20 ans à Montréal, répond à tous vos besoins, incluant les urgences.</p>
+    <button class="btn-white" onclick="document.getElementById('devis').scrollIntoView({behavior:'smooth'})">Demander un devis gratuit</button>
+  </div>
+  <div class="mascot-wrap">
+    <!-- Retro plumber mascot SVG -->
+    <svg width="260" height="300" viewBox="0 0 260 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Shadow -->
+      <ellipse cx="130" cy="285" rx="60" ry="10" fill="rgba(0,0,0,0.2)"/>
+      <!-- Body (overalls) -->
+      <ellipse cx="130" cy="190" rx="48" ry="55" fill="#1565C0"/>
+      <!-- Overalls bib -->
+      <rect x="108" y="148" width="44" height="40" rx="6" fill="#1E88E5"/>
+      <!-- Overall straps -->
+      <rect x="108" y="140" width="10" height="30" rx="5" fill="#1E88E5"/>
+      <rect x="142" y="140" width="10" height="30" rx="5" fill="#1E88E5"/>
+      <!-- Bib buttons -->
+      <circle cx="125" cy="158" r="3" fill="white" opacity=".6"/>
+      <circle cx="135" cy="158" r="3" fill="white" opacity=".6"/>
+      <!-- Shirt collar -->
+      <path d="M118 148 Q130 142 142 148" stroke="white" stroke-width="2" fill="none" opacity=".5"/>
+      <!-- Legs -->
+      <rect x="98" y="228" width="28" height="50" rx="10" fill="#0D47A1"/>
+      <rect x="134" y="228" width="28" height="50" rx="10" fill="#0D47A1"/>
+      <!-- Boots -->
+      <rect x="90" y="265" width="44" height="22" rx="8" fill="#212121"/>
+      <rect x="126" y="265" width="44" height="22" rx="8" fill="#212121"/>
+      <!-- Arms -->
+      <!-- Right arm (holding wrench) -->
+      <rect x="175" y="155" width="20" height="55" rx="10" fill="#FFCCBC" transform="rotate(20 185 165)"/>
+      <!-- Left arm (raising up) -->
+      <rect x="58" y="140" width="20" height="50" rx="10" fill="#FFCCBC" transform="rotate(-30 68 155)"/>
+      <!-- Hands -->
+      <circle cx="190" cy="200" r="12" fill="#FFCCBC"/>
+      <circle cx="52" cy="122" r="12" fill="#FFCCBC"/>
+      <!-- WRENCH in right hand -->
+      <g transform="translate(192,195) rotate(40)">
+        <rect x="-4" y="-28" width="8" height="40" rx="4" fill="#78909C"/>
+        <ellipse cx="0" cy="-28" rx="10" ry="7" fill="#607D8B"/>
+        <ellipse cx="0" cy="-28" rx="5" ry="4" fill="#90A4AE"/>
+        <rect x="-4" y="8" width="8" height="14" rx="4" fill="#607D8B"/>
+      </g>
+      <!-- HEAD -->
+      <ellipse cx="130" cy="100" rx="42" ry="44" fill="#FFCCBC"/>
+      <!-- Hair -->
+      <ellipse cx="130" cy="62" rx="42" ry="16" fill="#3E2723"/>
+      <rect x="88" y="62" width="84" height="18" rx="0" fill="#3E2723"/>
+      <!-- Side hair -->
+      <rect x="88" y="62" width="12" height="28" rx="6" fill="#3E2723"/>
+      <rect x="160" y="62" width="12" height="28" rx="6" fill="#3E2723"/>
+      <!-- Ears -->
+      <ellipse cx="88" cy="105" rx="8" ry="10" fill="#FFB09C"/>
+      <ellipse cx="172" cy="105" rx="8" ry="10" fill="#FFB09C"/>
+      <!-- Eyes -->
+      <ellipse cx="116" cy="100" rx="7" ry="8" fill="white"/>
+      <ellipse cx="144" cy="100" rx="7" ry="8" fill="white"/>
+      <circle cx="118" cy="101" r="4" fill="#1A237E"/>
+      <circle cx="146" cy="101" r="4" fill="#1A237E"/>
+      <circle cx="119" cy="99" r="1.5" fill="white"/>
+      <circle cx="147" cy="99" r="1.5" fill="white"/>
+      <!-- Eyebrows (raised/happy) -->
+      <path d="M109 90 Q116 85 123 90" stroke="#3E2723" stroke-width="3" stroke-linecap="round" fill="none"/>
+      <path d="M137 90 Q144 85 151 90" stroke="#3E2723" stroke-width="3" stroke-linecap="round" fill="none"/>
+      <!-- Big smile -->
+      <path d="M112 118 Q130 135 148 118" stroke="#C62828" stroke-width="3" stroke-linecap="round" fill="none"/>
+      <!-- Teeth -->
+      <path d="M116 120 Q130 132 144 120" fill="white"/>
+      <!-- Nose -->
+      <ellipse cx="130" cy="110" rx="5" ry="4" fill="#FFB09C"/>
+      <!-- Cap -->
+      <ellipse cx="130" cy="65" rx="44" ry="12" fill="#0D47A1"/>
+      <rect x="86" y="55" width="88" height="16" rx="8" fill="#0D47A1"/>
+      <rect x="80" y="65" width="16" height="8" rx="2" fill="#0D47A1"/>
+      <!-- Cap logo -->
+      <circle cx="130" cy="58" r="10" fill="#1565C0"/>
+      <text x="130" y="62" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="900" fill="white">DE</text>
+      <!-- Motion lines (running effect) -->
+      <line x1="38" y1="170" x2="62" y2="170" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity=".4"/>
+      <line x1="32" y1="185" x2="60" y2="185" stroke="white" stroke-width="2" stroke-linecap="round" opacity=".3"/>
+      <line x1="40" y1="200" x2="62" y2="200" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity=".2"/>
+      <!-- Water drops -->
+      <ellipse cx="210" cy="90" rx="5" ry="7" fill="rgba(100,181,246,0.7)"/>
+      <ellipse cx="225" cy="110" rx="4" ry="6" fill="rgba(100,181,246,0.5)"/>
+      <ellipse cx="200" cy="120" rx="3" ry="5" fill="rgba(100,181,246,0.4)"/>
+    </svg>
+  </div>
+</div>
+
+<!-- FORFAITS -->
+<section class="forfaits" id="forfaits">
+  <div class="forfaits-head">
+    <div class="eyebrow">Forfaits</div>
+    <h2 class="section-h2">Un service adapté<br><span>à chaque besoin</span></h2>
+    <p class="section-lead">Propriétaire, locataire ou gestionnaire d'immeuble, nous avons la formule pour vous.</p>
+  </div>
+  <div class="forfaits-grid">
+
+    <div class="forfait anim-scale d1">
+      <div class="f-top f-top-res">
+        <div class="f-pip f-pip-res">Résidentiel</div>
+        <div class="f-icon f-icon-res">
+          <svg width="26" height="26" fill="none" stroke="#1565C0" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+        </div>
+        <div class="f-name f-name-res">Maisons &amp;<br>Appartements</div>
+        <div class="f-sub-res">Propriétaires & locataires</div>
+      </div>
+      <div class="f-body">
+        <ul class="f-list">
+          <li><div class="f-check f-check-blue"><svg width="11" height="11" fill="none" stroke="#1565C0" stroke-width="3" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>Dépannage et réparation d'urgence</li>
+          <li><div class="f-check f-check-blue"><svg width="11" height="11" fill="none" stroke="#1565C0" stroke-width="3" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>Remplacement de chauffe-eau</li>
+          <li><div class="f-check f-check-blue"><svg width="11" height="11" fill="none" stroke="#1565C0" stroke-width="3" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>Débouchage et entretien des drains</li>
+          <li><div class="f-check f-check-blue"><svg width="11" height="11" fill="none" stroke="#1565C0" stroke-width="3" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>Rénovation de salle de bain</li>
+          <li><div class="f-check f-check-blue"><svg width="11" height="11" fill="none" stroke="#1565C0" stroke-width="3" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>Devis gratuit, sans engagement</li>
+        </ul>
+        <button class="f-cta f-cta-res" onclick="document.getElementById('devis').scrollIntoView({behavior:'smooth'})">Demander un devis →</button>
+      </div>
+    </div>
+
+    <div class="forfait featured anim-scale d2">
+      <div class="f-top f-top-comm">
+        <div class="f-pip f-pip-comm">⭐ Le plus populaire</div>
+        <div class="f-icon f-icon-comm">
+          <svg width="26" height="26" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+        </div>
+        <div class="f-name f-name-comm">Commercial<br>&amp; Entreprises</div>
+        <div class="f-sub-comm">Bureaux, commerces, ICI</div>
+      </div>
+      <div class="f-body">
+        <ul class="f-list">
+          <li><div class="f-check f-check-blue"><svg width="11" height="11" fill="none" stroke="#1565C0" stroke-width="3" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>Tout le forfait résidentiel inclus</li>
+          <li><div class="f-check f-check-blue"><svg width="11" height="11" fill="none" stroke="#1565C0" stroke-width="3" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>Contrat d'entretien annuel</li>
+          <li><div class="f-check f-check-blue"><svg width="11" height="11" fill="none" stroke="#1565C0" stroke-width="3" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>Priorité d'intervention garantie</li>
+          <li><div class="f-check f-check-blue"><svg width="11" height="11" fill="none" stroke="#1565C0" stroke-width="3" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>Rapport de conformité aux normes</li>
+          <li><div class="f-check f-check-blue"><svg width="11" height="11" fill="none" stroke="#1565C0" stroke-width="3" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>Gestionnaire de compte dédié</li>
+        </ul>
+        <button class="f-cta f-cta-comm" onclick="document.getElementById('devis').scrollIntoView({behavior:'smooth'})">Obtenir une soumission →</button>
+      </div>
+    </div>
+
+    <div class="forfait anim-scale d3">
+      <div class="f-top f-top-urg">
+        <div class="f-pip f-pip-urg">24h/24 · 7j/7</div>
+        <div class="f-icon f-icon-urg">
+          <svg width="26" height="26" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <div class="f-name f-name-urg">Urgence<br>Immédiate</div>
+        <div class="f-sub-urg">Intervention garantie &lt;1h</div>
+      </div>
+      <div class="f-body">
+        <ul class="f-list">
+          <li><div class="f-check f-check-blue"><svg width="11" height="11" fill="none" stroke="#1565C0" stroke-width="3" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>Disponible 24h/24 et 7j/7</li>
+          <li><div class="f-check f-check-blue"><svg width="11" height="11" fill="none" stroke="#1565C0" stroke-width="3" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>Technicien sur place en &lt;1h</li>
+          <li><div class="f-check f-check-blue"><svg width="11" height="11" fill="none" stroke="#1565C0" stroke-width="3" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>Fuites, inondations, bris majeurs</li>
+          <li><div class="f-check f-check-blue"><svg width="11" height="11" fill="none" stroke="#1565C0" stroke-width="3" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>Arrêt d'urgence de l'alimentation</li>
+          <li><div class="f-check f-check-blue"><svg width="11" height="11" fill="none" stroke="#1565C0" stroke-width="3" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>Rapport pour dossier assurance</li>
+        </ul>
+        <button class="f-cta f-cta-urg" onclick="window.location.href='tel:5140000000'">⚡ Appeler maintenant →</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="avis">
+  <div class="reviews-head">
+    <div>
+      <div class="eyebrow">Avis clients</div>
+      <h2 class="section-h2">Ce que disent<br><span>nos clients</span></h2>
+    </div>
+    <div class="big-score">
+      <div class="big-num">4,9</div>
+      <div>
+        <div class="stars-row">★★★★★</div>
+        <div class="review-count">+340 avis Google vérifiés</div>
+      </div>
+    </div>
+  </div>
+  <div class="reviews-grid">
+    <div class="rev-card anim-fadeup d1">
+      <div class="rev-stars">★★★★★</div>
+      <p class="rev-text">"Fuite sous mon évier un dimanche soir, ils étaient là en 45 minutes. Travail impeccable, prix honnête. Je recommande sans hésiter."</p>
+      <div class="rev-author">
+        <div class="rev-av" style="background:#1565C0;">ML</div>
+        <div><div class="rev-name">Marie-Laure B.</div><div class="rev-loc">Plateau-Mont-Royal</div></div>
+      </div>
+    </div>
+    <div class="rev-card anim-fadeup d2">
+      <div class="rev-stars">★★★★★</div>
+      <p class="rev-text">"Suite à notre inondation au sous-sol, Dépann'eau a réagi en moins d'une heure. Rapport remis immédiatement pour l'assurance, parfait."</p>
+      <div class="rev-author">
+        <div class="rev-av" style="background:#C62828;">JD</div>
+        <div><div class="rev-name">Jacques D.</div><div class="rev-loc">Laval</div></div>
+      </div>
+    </div>
+    <div class="rev-card anim-fadeup d3">
+      <div class="rev-stars">★★★★★</div>
+      <p class="rev-text">"On gère plusieurs immeubles à Montréal. Dépann'eau s'occupe de tous nos entretiens depuis 3 ans. Sérieux, ponctuel, compétent."</p>
+      <div class="rev-author">
+        <div class="rev-av" style="background:#6A1B9A;">SR</div>
+        <div><div class="rev-name">Sophie R.</div><div class="rev-loc">Gestion immobilière RSG</div></div>
+      </div>
+    </div>
+    <div class="rev-card anim-fadeup d4">
+      <div class="rev-stars">★★★★★</div>
+      <p class="rev-text">"Remplacement complet du chauffe-eau en une journée. Devis reçu rapidement, travaux propres. Le technicien a tout expliqué clairement."</p>
+      <div class="rev-author">
+        <div class="rev-av" style="background:#2E7D32;">TC</div>
+        <div><div class="rev-name">Thomas C.</div><div class="rev-loc">Rosemont</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER CTA -->
+<div class="foot-cta">
+  <h2>Un problème ?<br><span>On intervient aujourd'hui.</span></h2>
+  <p>Appelez directement ou remplissez le formulaire, réponse sous 1 heure.</p>
+  <div class="foot-actions">
+    <button class="foot-phone" onclick="window.location.href='tel:5140000000'">
+      <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.86 19.86 0 013.1 5.18 2 2 0 015.09 3h3a2 2 0 012 1.72c.13 1 .38 1.97.72 2.91a2 2 0 01-.45 2.11L9.09 11a16 16 0 006.91 6.91l1.27-1.27a2 2 0 012.11-.45c.94.34 1.91.59 2.91.72A2 2 0 0122 16.92z"/></svg>
+      514 000-0000
+    </button>
+    <button class="btn-ghost" style="padding:20px 36px;font-size:20px;" onclick="document.getElementById('devis').scrollIntoView({behavior:'smooth'})">Demander un devis gratuit</button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-logo">Dépann'eau Inc.</div>
+  <div class="foot-note">© 2025 Dépann'eau · Licence RBQ 1234-5678-01 · Montréal, QC · Tous droits réservés</div>
+</footer>
+
+<!-- Scroll animation observer -->
+<script src="main.js"></script>
+</body>
+</html>
